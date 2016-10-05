@@ -4,11 +4,14 @@
 \alias{hi}
 \title{Helps start conversations}
 \usage{
-hi(who)
+hi(who, how = c("shout", "whisper"))
 }
 \arguments{
 \item{who}{character(1) The name of the person you wish to talk to start a
 conversation with}
+
+\item{how}{char(1) how to greet the person.  Either "shout" (default) or
+"whisper"}
 }
 \value{
 character(1) A line of hello world with num of chars
@@ -18,8 +21,8 @@ This function generates a string with name, numchars ldladnflanflanfnal
 ladkflfamlaklallafmkaaflmlamalfk
 }
 \examples{
- 
 hi("Paul")
+hi("Paul", "whisper")
 
 }
 
