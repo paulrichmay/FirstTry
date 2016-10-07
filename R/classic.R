@@ -11,7 +11,7 @@
 #'
 #' @param pdata_file character (1) The path to the pheno data file.
 #'
-#' @param ecprs_file Character (1) The path to the expression file.
+#' @param exprs_file Character (1) The path to the expression file.
 #'
 #' @return A data.frame containing samples as rows and phenotype data
 #'   and expression data as columns.
