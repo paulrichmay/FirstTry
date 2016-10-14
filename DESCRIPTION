@@ -1,6 +1,6 @@
 Package: Paul
 Title: Implements Useful Utilities for my Personal Use
-Version: 0.2.2
+Version: 0.2.3
 Authors@R: person("Paul", "May",
      email = "paul.may@roswellpark.org",
      role = c("aut", "cre"))
@@ -15,3 +15,4 @@ License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
+Suggests: testthat
