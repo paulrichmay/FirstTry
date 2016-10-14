@@ -1,6 +1,6 @@
 Package: Paul
 Title: Implements Useful Utilities for my Personal Use
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: person("Paul", "May",
      email = "paul.may@roswellpark.org",
      role = c("aut", "cre"))

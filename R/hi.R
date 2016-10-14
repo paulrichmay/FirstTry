@@ -20,9 +20,7 @@
 hi = function(who, how = c("shout", "whisper")) {
      #check value of who to be char, length 1, not NA, otherwise stop
      stopifnot(
-          is.character(who),
-          length(who) == 1,
-          !is.na(who)
+          is_scalar_character(who)
      )
      how = match.arg(how)
      fun = switch(how, shout = shout, whisper = whisper)
