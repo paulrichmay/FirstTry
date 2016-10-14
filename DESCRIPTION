@@ -1,12 +1,16 @@
 Package: Paul
 Title: Implements Useful Utilities for my Personal Use
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: person("Paul", "May",
      email = "paul.may@roswellpark.org",
      role = c("aut", "cre"))
 Description: Helpful package.  Implements new idea.  Like an abstract.
 Depends:
     R (>= 3.3.1)
+Imports: SummarizedExperiment,
+     dplyr,
+     magrittr,
+     reshape2
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
