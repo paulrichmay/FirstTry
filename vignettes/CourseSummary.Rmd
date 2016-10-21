@@ -1,0 +1,66 @@
+---
+title: "Course Summary"
+author: "Paul May"
+date: "October 21, 2016"
+output: html_document
+---
+
+## Day 1: Packages and Version Control
+
+Learned to create a package using [devtools][1].  The way to get started is 
+to create the skeleton of a package.
+```
+library(devtools)
+create("Paul")
+```
+
+This creates a directory with a couple of files and a folder.
+We then did the following:
+
+1. The DESCRIPTION contains info about the package; we edited it for our purposes.
+2. Looked an NAMESPACE file, didn't touch it.
+3. Created first function in R folder, `hi()`.
+
+We then used [roxygen2][] to add documentation to the function, including
+information about parameters and return values.
+Also used tags (`@export`) to indicate that we wanted to 'export' the function 
+from the namespace. 
+
+We also learned to manage our source code using [github][].
+
+Here's the result of our work:
+
+```{r our-package}
+library(Paul)
+hi("Paul")
+```
+
+##Day 2: Classis, Tidy and Rich Data
+
+'Classic' data is represented as a `data.frame()` with samples and rows and 
+features as columns.
+
+```{r}
+pdatafl = "C:\\Users\\May_CA\\Desktop\\R Workshop\\Data Sets\\All-phenoData.csv"
+exprfl = "C:\\Users\\May_CA\\Desktop\\R Workshop\\Data Sets\\All-expression.csv"
+classic = input_classic(pdatafl, exprfl)
+classic[1:5, c(1:3, 22:25)]
+
+```
+
+One of the things we did was plot the distribution of expression values
+across genes
+
+```{r clasic-exprs-hist}
+hist(colMeans(classic[, -(1:22)]))
+```
+
+
+
+
+
+
+
+[1]: https://cran.r-project.org/package=devtools
+[roxygen2]: https://cran.r-project.org/package=roxygen2
+[github]: https://github.com
